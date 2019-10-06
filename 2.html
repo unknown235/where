@@ -1,4 +1,3 @@
-<!doctype html>
 <html>
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -11,22 +10,69 @@
   gtag('config', 'G-NPJRDP3HYX');
 </script>
 
-
 <title>WEB1-Where should you go?</title>
 <meta charset="utf-8">
+<style>
+#image{
+  display:grid;
+  grid-template-columns: 8fr 1fr;
+}
+#grid{
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr;
+}
+.contents{
+  font-family: sans-serif;
+  font-size: 35px;
+  font-weight: 100;
+  padding: 50px;
+  line-height : 1.4;
+}
+.b{
+  letter-spacing:-5px;
+  font-size:20px;
+  text-align:right;
+  margin : 18px;
+}
+a{
+  color:black;
+  text-decoration:none;
+
+}
+h1{
+  font-size:430%;
+   font-family: sans-serif;
+   font-weight: 480;
+  text-align: center;
+  padding:50px;
+
+}
+</style>
 </head>
 
 <body>
-  <a href="https://open.kakao.com/o/sDzZKUGb" target="_blank">개발자</a>
-  <h1><a href="index.html">어디가세요?</a></h1>
+  <div id="image">
+    <div><p class="c"><a href="index.html" target="_self">
+      <img src="back.png" width=35px;></a></p></div>
+  <div><p class="b"><a href="https://open.kakao.com/o/sDzZKUGb" target="_blank">
+    <img src="talk.png" width=45px;></a></p></div>
+  </div>
+  <h1>강의실은요?</h1>
 
-<p style="margin-top:50px;">
-  <a href="2.html">A</a>
-
-  <br>
+<div id="grid">
+  <div>  </div>
+  <ol>
+<p class="contents" style="margin-top:-70px;"><span style="font-weight:normal;">E</span>&nbsp; 에너지공학관<br>
+  <input type="button" id="button" onclick="location.href='E301.html'" value="E301" />
+  <input type="button" id="button" onclick="location.href='E302.html'" value="E302" />
+  <input type="button" id="button" onclick="location.href='E303.html'" value="E303" />
+  <input type="button" id="button" onclick="location.href='통신공학실험실.html'" value="통신공학실험실" />
+  <input type="button" id="button" onclick="location.href='디지털시스템실험실.html'" value="디지털시스템실험실" />
+  <input type="button" id="button" onclick="window.open('https://open.kakao.com/o/sDzZKUGb')" value="추가요청" />
 </p>
-
-<img src="A205.png" width="50%">
+</ol>
+<div> </div>
+</div>
 
 
 </body>
