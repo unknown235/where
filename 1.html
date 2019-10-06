@@ -13,6 +13,10 @@
 <title>WEB1-Where should you go?</title>
 <meta charset="utf-8">
 <style>
+  #image{
+    display:grid;
+    grid-template-columns: 8fr 1fr;
+  }
 #grid{
   display: grid;
   grid-template-columns: 2fr 4fr 2fr;
@@ -47,16 +51,21 @@ h1{
 </head>
 
 <body>
+<div id="image">
+  <div><p class="c"><a href="index.html" target="_self">
+    <img src="back.png" width=35px;></a></p></div>
   <div><p class="b"><a href="https://open.kakao.com/o/sDzZKUGb" target="_blank">
     <img src="talk.png" width=45px;></a></p></div>
+    </div>
   <h1>강의실은요?</h1>
 
 <div id="grid">
   <div>  </div>
   <ol>
-<p class="contents" style="margin-top:-70px;"><a href="1.html">
-  <span style="font-weight:normal;">A</span>&nbsp; 원효관</a>
+<p class="contents" style="margin-top:-70px;">
+  <span style="font-weight:normal;">A</span>&nbsp; 원효관
   <input type="tel" pattern="\d*" placeholder="강의실 입력" />
+  <input type="button" id="button" onclick="location.href='A204.html'" value="go" />
 </p>
 </ol>
 <div> </div>
