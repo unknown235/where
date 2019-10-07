@@ -1,33 +1,29 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title></title>
-<style>
-  #grid{
-    border:5px solid pink;
-    display:grid;
-    grid-template-columns: 8fr 1fr;
-  }
-  div{
-    border:5px solid gray;
-  }
-  .a{
-    letter-spacing:-5px;
-    font-size:18px;
-    text-align:right;
-  }
-  </style>
-</head>
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS</title>
 
-<body>
+  </head>
 
+  <body>
+    <input type="none" id = "ShareUrl">
+<span class="btn-type1"><button OnClick="javascript:CopyUrlToClipboard()" style="border:none;">
+      <img src="copy.png" width=35px; ></button></span>
 
+<script>
+    function CopyUrlToClipboard()
+    {
+    	var obShareUrl = document.getElementById("ShareUrl");
+    	obShareUrl.value = window.document.location.href;  // 현재 URL 을 세팅해 줍니다.
 
-  <div id="grid">
-<div>NAVIGATION</div>
-<div><p class="a">•••</p></div>
-</div>
+    	obShareUrl.select();  // 해당 값이 선택되도록 select() 합니다
+    	document.execCommand("copy"); // 클립보드에 복사합니다.
+      obShareUrl.blur();
+
+    	alert("URL이 클립보드에 복사되었습니다");
+    }
+</script>
 
 
 
